@@ -19,4 +19,9 @@ public class DemoController {
     public String hello1() {
         throw new RuntimeException("Runtime error");
     }
+
+    @RequestMapping("/saddam")
+    public String hello2() {
+        return "Saddam";
+    }
 }
