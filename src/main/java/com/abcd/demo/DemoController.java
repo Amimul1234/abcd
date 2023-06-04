@@ -12,7 +12,7 @@ public class DemoController {
 
     @RequestMapping("/hello")
     public String hello() {
-        return demoService.returnString();
+        throw new RuntimeException("Runtime error");
     }
 
     @RequestMapping("/ehsan")
